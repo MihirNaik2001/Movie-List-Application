@@ -1,0 +1,128 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: linear-gradient(gray, white);
+}
+
+::placeholder {
+    text-align: center;
+  }
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.container {
+    margin: 2rem auto;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search select,
+.search input,
+.search button {
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.movie {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.movie img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.movie h3 {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.movie:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.pagination button {
+    margin: 0 0.5rem;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.movie-details img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-details h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.movie-details p {
+    font-size: 1.1rem;
+}
+
+.movie-details div {
+    margin-top: 1rem;
+}
+
+.movie-details label {
+    font-size: 1.1rem;
+}
+
+.movie-details input,
+.movie-details textarea,
+.movie-details button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.info {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black
+}
+
+.input-info {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid gray
+}
