@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-List-Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Movie List Application</h1>
+        <div class="search">
+            <select id="searchType" onchange="setSearchType()">
+                <option value="s">Title</option>
+                <option value="i">ID</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Search by title" onchange="setSearchType()">
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="content">
+                <div class="movie-list" id="movieList">
+            
+                </div>
+            
+                <div class="pagination" id="pagination">
+                    <button id="prevBtn">Previous</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+            </div>
+
+            <div class="movie-details" id="movieDetails">
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
